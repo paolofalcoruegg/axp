@@ -15,15 +15,17 @@
 </sup></sup>
 </p>
 
-**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two stations, one of which explores the effects of pure tones, and one that allows the spectator to play their own music. The patterns represent a visualisation the wealth of information contained in audio signals, and are mesmerising and surprising alike. 
+**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two stations, one of which explores the effects of pure tones, and one that allows the spectator to play their own music. The patterns represent a visualisation the wealth of information contained in audio signals, and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
 
-### Work Split
+### Aims & Work Packages
+
+The idea for this installation evolved from the beautiful effect oscillations can have on substances such as Non-Newtonian fluids. During a brief research phase, the team looked at previous installations, which were mostly focused on pure tones. The aim of this installation was to highlight cymatics both bottom-up and top-down, i.e. from a pure tone and complex signal (music) perspective. 
 
 My specific responsibilities were focused on the station with custom music input and included:
 
-- Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
-- Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
-- Integration: Sourcing the required audio components and connecting hardware to software
+1. Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
+2. Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
+3. Integration: Sourcing the required audio components and connecting hardware to software
 
 ### Sound Visualisation
 
