@@ -15,9 +15,25 @@
 </sup></sup>
 </p>
 
-**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two stations, one of which explores the effects of pure tones, and one that allows the spectator to play their own music. The patterns represent a visualisation the wealth of information contained in audio signals, and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
+**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two stations, one of which explores the effects of pure tones, and one that allows the spectator to see their own music. The genereated patterns are a visualisation of the wealth of information contained in audio signals, and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
+
+### Background & Inspiration
+
+<details>
+<summary>Click to expand this section</summary><br>
+
+A Chladni plate visualises the standing wave patterns generated at its natural resonating frequencies. The original experiment used fine particles such as sand on a steel plate, which is then excited with a bow or a loudspeaker. As the plate starts to resonate, the sand bounces from the vibrating antinodes to the stationary nodes. In mathematic terms, the nodes are the solutions (zero points) of the plate's 2D wave equation at a given frequency. At the plate's resonating frequencies, the sand coalesces around the nodal lines of the standing wave. As a consequence, so-called Chladni figures become visible, as shown below for a guitar body.
+
+<p align="center"><img width="700" src=".github/Chladni.svg" alt="cover"></p>
+
+This effect can be extended to liquids that are placed on a moving diaphragm. It results in beautiful patterns that are dependent on frequency and ampltitude. The project team decided to create an installation around vibrational patterns generated in liquids.
+
+</details>
 
 ### Aims & Work Packages
+
+<details>
+<summary>Click to expand this section</summary><br>
 
 The idea for this installation evolved from the beautiful effect oscillations can have on substances such as Non-Newtonian fluids. During a brief research phase, the team looked at previous installations, which were mostly focused on pure tones. The aim of this installation was to highlight cymatics both bottom-up and top-down, i.e. from a pure tone and complex signal (music) perspective. 
 
@@ -26,6 +42,8 @@ My specific responsibilities were focused on the station with custom music input
 1. Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
 2. Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
 3. Integration: Sourcing the required audio components and connecting hardware to software
+
+</details>
 
 ### Sound Visualisation
 
