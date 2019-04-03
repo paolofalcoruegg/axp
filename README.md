@@ -1,6 +1,6 @@
 <p  align="center"><img width="auto" src=".github/Cover.jpg" alt="cover"></p>
 <h1 align="center">
-  Audio Experience Design
+  Arena
 </h1>
 
 <p  align="center">
@@ -11,47 +11,70 @@
 
 <p  align="center">
 <sup><sup>
-  Dyson School of Design Engineering, Imperial College London
+  Dyson School of Design Engineering | Imperial College London | Audio Experience Design
 </sup></sup>
 </p>
 
-**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two stations, one of which explores the effects of pure tones, and one that allows the spectator to see their own music. The genereated patterns are a visualisation of the wealth of information contained in audio signals, and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
+**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the spectator to see their own music. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
 
 ### Background & Inspiration
 
-<details>
-<summary>Click to expand this section</summary><br>
+A Chladni plate visualises the standing wave patterns generated at its natural resonating frequencies. The original experiment uses fine particles such as sand on a steel plate, which is then excited with a bow or a loudspeaker. As the plate starts to resonate, the sand bounces from the vibrating antinodes to the stationary nodes. In mathematic terms, the nodes are the solutions (zero points) of the plate's 2D wave equation at a given frequency. The sand coalesces around the nodal lines of the standing wave. As a consequence, so-called Chladni figures become visible, as shown below for a guitar body at its different resonating frequencies.
 
-A Chladni plate visualises the standing wave patterns generated at its natural resonating frequencies. The original experiment used fine particles such as sand on a steel plate, which is then excited with a bow or a loudspeaker. As the plate starts to resonate, the sand bounces from the vibrating antinodes to the stationary nodes. In mathematic terms, the nodes are the solutions (zero points) of the plate's 2D wave equation at a given frequency. At the plate's resonating frequencies, the sand coalesces around the nodal lines of the standing wave. As a consequence, so-called Chladni figures become visible, as shown below for a guitar body.
+<p align="center"><img width="700" src=".github/Chladni.svg" alt="cover">Figure 1: Chladni Figures on a guitar body</p>
 
-<p align="center"><img width="700" src=".github/Chladni.svg" alt="cover"></p>
+This effect can be extended to liquids that are placed on a vertically oscillating diaphragm. It results in beautiful patterns as shown in the image below. Specifically, the patterns created on a vertically oscillating fluid are known as Faraday waves. The morphology of the patterns is highly dependent on frequency and container geometries. Amplitude, on the other hand, does not change the form the standing wave. The project team decided to create an installation around vibrational patterns generated in liquids. 
 
-This effect can be extended to liquids that are placed on a moving diaphragm. It results in beautiful patterns that are dependent on frequency and ampltitude. The project team decided to create an installation around vibrational patterns generated in liquids.
-
-</details>
+<p align="center"><img width="700" src=".github/FaradayWaves.jpg" alt="cover">Figure 2: Faraday waves</p>
 
 ### Aims & Work Packages
 
+<!--
 <details>
-<summary>Click to expand this section</summary><br>
+<summary>Aims & Work Packages</summary><br>
+-->
 
-The idea for this installation evolved from the beautiful effect oscillations can have on substances such as Non-Newtonian fluids. During a brief research phase, the team looked at previous installations, which were mostly focused on pure tones. The aim of this installation was to highlight cymatics both bottom-up and top-down, i.e. from a pure tone and complex signal (music) perspective. 
+The idea for this installation evolved from the beautiful effect oscillations can have on substances such as Non-Newtonian fluids. During a brief research phase, the team looked at previous installations, which were mostly focused on pure tones. The aim of this installation was to showcase the field of cymatics both bottom-up and top-down, i.e. with a pure tone and complex signal (music) approach. The team managed to source two 12'' drivers and, in line with this, aimed to build two modules. The initial concept  
 
-My specific responsibilities were focused on the station with custom music input and included:
+***TODO***: CONCEPT DEVELOPMENT / INTERACTIONS
 
-1. Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
-2. Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
-3. Integration: Sourcing the required audio components and connecting hardware to software
+<p align="center"><img width="700" src=".github/ConceptOne.jpg" alt="cover"><img width="700" src=".github/ConceptTwo.jpg" alt="cover">Figure XXX: Component decomposition for both modules</p>
 
-</details>
+**Module 1** lets the user investigate the patterns generated by complex music signals
 
-### Sound Visualisation
+**Module 2** lets the user investigate the patterns generated by sinusoids of varying frequency
 
-This subsystem was essentially a color-changing equaliser with three frequency bins, where red, green & blue represented bass, midrange & highs. As such, a simple one-way data stream from Max MSP to a microcontroller was required, where RGB values where serially transferred. On the Max side, the full signal was passed into two crossover objects (cross~), scaled and then sent to the microcontroller. This was introduced as a bpatcher object in the top-level Max patch, retaining toggling functionality to manually control RGB levels. The full Max patch for sending data serially is available in the repository.
+Both modules were designed to allow for different interactions, as shown below.
+XXX
+My personal responsibilities were focused on  ***Module 2*** and can be summarised in three distinct work packages:
+
+1. Integration: Designing the full system, sourcing the required audio components and connecting hardware to software
+2. Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
+3. Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
+
+### WP1: System Design & Integration
+
+A clear system design was required to ensure the build would go smoothly. A component decomposition is shown below for both modules, where I was primarily involved with designing the first module (left).
+
+<p align="center"><img width="700" src=".github/SystemDiagram.svg" alt="cover">Figure XXX: Component decomposition for both modules</p>
+
+A components list is shown below for ***Module 1***. All unnamed components are standard audio and electronic components such as cables.
+
+* LEPY LP-202A Hi-Fi Stereo Power Amplifier (2 Channels, 20W RMS)
+* Focusrite Scarlett 2i2 Audio Interface (2 Channels)
+* Adafruit NeoPixel Digital RGB LED Strip (120 LEDs)
+* Arduino Uno R3
+* 12'' Radioshack speaker
+
+The audio connections were established using a plethora of 3.5mm, 6.35mm and speaker cables. Data and power lines either ran through USB-A or jumper wires.
+
+### WP2: Sound Visualisation
+
+This subsystem was a color-changing equaliser with three frequency bins, where red, green & blue represented bass, midrange & highs. As such, a simple one-way data stream from Max MSP to a microcontroller was required, where RGB values where serially transferred. On the Max side, the full signal was passed into two crossover objects (cross~), scaled and then sent to the microcontroller. The cut-off frequencies for the three frequency bands were chosen at 1000 Hz and 3000 Hz for bass-mid and mid-high, respectively. The patch shown below was introduced as a bpatcher object in the top-level Max patch, retaining toggling functionality to manually control RGB levels for debugging. The full Max patch for sending data serially is available in the repository.
 
 <p align="center"><img width="700" src=".github/LEDControl.jpeg" alt="cover"></p>
 
-On the receiving end, the microcontroller interpreted the bytes as RGB values and controlled the LED strip. The loop function is shown below. 
+On the receiving end, the microcontroller interpreted the bytes as RGB values and controlled the LED strip through Adafruit's Neopixel library. The loop function is shown below. 
 
 ```
 void loop() 
@@ -77,19 +100,47 @@ void loop()
     delay(20);
 }
 ```
-### Sound Processing
 
-The normalised input audio was passed into a crossfader along with the waveshaped signal on the second input. Potentiometers actuated by the user informed both output volume and the mixing between the two channels. The output to the subwoofer was furthermore filtered using a biquad~ object, at a cutoff frequency of 120 Hz during the installation. The filtered sub  and the unfiltered headphone mono signals were sent to individual DAC outputs.
+In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 10A power supply. Information about specific components can be found in the ***WP3: Integration*** section. The LED ring was run along the outer edge of the plate as shown below.
+
+<p align="center"><img width="700" src=".github/LEDProcess.jpg" alt="cover"></p>
+
+### WP3: Sound Processing
+
+The normalised input audio was passed into a crossfader object (M4L.cross1~), along with the waveshaped signal on the second input. Potentiometers actuated by the user informed output volume and the mixing between the raw and modified signal. One porblem that quickly became apparent was that the loudness of the subwoofer was excessive considering two modules were playing at the same time. During the installation, the signal to the subwoofer was therefore filtered using a biquad~ object, at a cutoff frequency of 120 Hz. The filtered sub and the unfiltered headphone mono signals were sent to individual DAC outputs on the audio interface.
 
 <p align="center"><img width="700" src=".github/Fader.jpeg" alt="cover"></p>
-
-### Integration
-
-A clear system overview was required to combine the different subsystems into a working functional prototype. It is shown below for the station I was working on.
 
 ### Build
 
 A wooden top piece with an organic curvature was manufactured to overlay the subwoofer. The knobs were attached along with a wooden frame to hold the structure. The frame could subsequently be placed over the subwoofer, with the electronics tucked away underneath the presentation table.
+
+### Results
+
+<p align="center"><img width="700" src=".github/Fader.jpeg" alt="cover"></p>
+
+### Review
+
+The installation was a success with the biggest response being amazement at the complexity of patterns produced. It was noted how a relatively simple apparatus could create complex nonlinear behaviours. Moreover, people appeared to like the fact that they could play their own music, somewhat giving them a new experience of music they already have an emotional attachment to. Other successes included:
+
+* Tightness of seal through use of acetyl welding
+* 
+
+Limitations included the meaningfulness of the interactions and the loudness of the installation. The former suffered from the fact that the team struggled to 'decompose' a music track into fewer yet consonant signals. The loudness of the installation was another drawback, especially as the sound seeped through to the other module, sometimes causing Faraday waves on one when only the other one was playing. Other limitations included:
+
+* Average build quality due to time constraints
+* Considerable difficulty in transporting and assembling the installation
+* Performance issues related to serial connections to Arduino
+
+### Future Works
+
+This project was conducted over a very short time frame along with various other deadlines. As a result, many corners were cut and future work should start with a rework of already existing building blocks such as:
+
+* Devise a better cable management strategy
+* Use plugs rather than soldered connections
+* Make serial connection for robust
+
+On top of that, interactions should be overhauled. FFT-based peak decomposition with narrow frequency bins could be very interesting to isolate the highest amplitude frequencies and see their effect as opposed to a full music signal.
 
 ### License
 
