@@ -8,7 +8,7 @@
 <sup>
   <a href="https://github.com/pa17">Paolo Rüegg, </a> 
   <a href="https://github.com/leahpattison">Leah Pattison, </a>
-  <a>Ellie Peatman, </a> 
+  <a href="https://github.com/ElliePeatman">Ellie Peatman, </a>
   <a>Oliver Hoare, </a>
   <a href="https://github.com/josephine-latreille">Josephine Latreille</a>
 </sup>
@@ -20,7 +20,7 @@
 </sup></sup>
 </p>
 
-**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the spectator to see their own music visualised. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
+**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the visitor to play  their music on the apparatus. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
 
 <br>
 
@@ -28,6 +28,11 @@
 <p align="center"><img src=".github/GalleryBeat.gif"></p>
 <p align="center"><img src=".github/GallerySide.jpg"></p>
 <p align="center"><img src=".github/GalleryTop.jpg"></p>
+
+## Contents
+
+<details>
+<summary style="font-size: medium">Background & Insipration</summary>
 
 ### Background & Inspiration
 
@@ -41,6 +46,11 @@ This effect can be extended to liquids that are placed on a vertically oscillati
 <p align="center"><img width="700" src=".github/FaradayWaves.jpg"></p>
 <p align="center"><em>Figure 2: Faraday waves. <a href="http://waterjournal.org/volume-9/sheldrake">Source</a></em></p>
 
+</details>
+
+<details>
+<summary style="font-size: medium">Research</summary>
+
 ### Research
 
 This initial phase aimed at testing various interesting audio phenomena and quickly progressing to a concept. The team tested ferrofluids, iron filings, vodka and various other substances on a bass reflex speaker, as shown below. We also looked at previous installations, which were mostly focused on pure tones. 
@@ -48,11 +58,16 @@ This initial phase aimed at testing various interesting audio phenomena and quic
 <p align="center"><img width="350" src=".github/Research.gif"></p>
 <p align="center"><em>Figure 3: Faraday waves on a simple woofer</em></p>
 
+</details>
+
+<details>
+<summary style="font-size: medium">Aims & Work Packages</summary>
+
 ### Aims & Work Packages
 
 <!--
 <details>
-<summary>Aims & Work Packages</summary><br>
+<summary style="font-size: medium">Aims & Work Packages</summary><br>
 -->
 
 The concept for Arena evolved from the beautiful effect sound waves can have on liquids. The aim of this installation was to showcase the field of cymatics both bottom-up and top-down, i.e. with a pure tone and complex signal (music) approach. The team managed to source two 12'' drivers and, in line with this, aimed to build two modules.
@@ -72,11 +87,18 @@ My personal responsibilities were focused on  ***Module 1*** and can be summaris
 2. Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
 3. Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
 
+There was no solid framework with regards to time planning. The general strategy was to source all components early on (W7 - W8), get individual tasks done in the following two weeks (W8 - W9), and to work together to integrate the subsystems in W10. 
+
+</details>
+
+<details>
+<summary style="font-size: medium">WP1: System Design & Hardware Integration</summary>
+
 ### WP1: System Design & Hardware Integration
 
 A clear system design was required to ensure the build would go smoothly. A component decomposition is shown below for both modules, where I was primarily involved with designing the first module (left).
 
-<p align="center"><img width="700" src=".github/SystemDiagram.svg"></p>
+<p align="center"><img src=".github/SystemDiagram.svg"></p>
 <p align="center"><em>Figure 5: Component decomposition for both modules</em></p>
 
 A more detailed components breakdown is shown below for ***Module 1***. All unspecified components are standard audio and electronic components such as cables:
@@ -93,6 +115,11 @@ The components were connected using a plethora of 3.5mm, 6.35mm and speaker cabl
 <p align="center"><em>Figure 6: Hardware integration</em></p>
 
 For the purposes of the installation, the electronics box was hidden away underneath a table upon which the module was placed.
+
+</details>
+
+<details>
+<summary style="font-size: medium">WP2: Sound Visualisation</summary>
 
 ### WP2: Sound Visualisation
 
@@ -134,6 +161,11 @@ In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 
 <p align="center"><img width="700" src=".github/LEDProcess.jpg"></p>
 <p align="center"><em>Figure 8: LED ring assembly</em></p>
 
+</details>
+
+<details>
+<summary style="font-size: medium">WP3: Sound Processing</summary>
+
 ### WP3: Sound Processing
 
 The normalised input audio was passed into a crossfader object (M4L.cross1~), along with the waveshaped signal on the second input. Potentiometers actuated by the user informed output volume and the mixing between the raw and modified signal. One porblem that quickly became apparent was that the loudness of the subwoofer was excessive considering two modules were playing at the same time. During the installation, the signal to the subwoofer was therefore filtered using a biquad~ object, at a cutoff frequency of 120 Hz. The filtered sub and the unfiltered headphone mono signals were sent to individual DAC outputs on the audio interface.
@@ -141,9 +173,24 @@ The normalised input audio was passed into a crossfader object (M4L.cross1~), al
 <p align="center"><img width="700" src=".github/Fader.jpeg"></p>
 <p align="center"><em>Figure 9: Crossfader and filtering patch</em></p>
 
+</details>
+
+<details>
+<summary style="font-size: medium">Build</summary>
+
 ### Build
 
 A wooden top piece with an organic curvature was manufactured to overlay the subwoofer. The knobs were attached along with a wooden frame to hold the structure. The frame could subsequently be placed over the subwoofer, with the electronics tucked away underneath the presentation table.
+
+<p align="center"><img width="700" src=".github/BuildProcess.gif"></p>
+<p align="center"><em>Figure 10: Ollie is painting the top pieces</em></p>
+
+The final piece is shown in the gallery on top for presentation reasons. 
+
+</details>
+
+<details>
+<summary style="font-size: medium">Review</summary>
 
 ### Review
 
@@ -159,6 +206,11 @@ Limitations included the meaningfulness of the interactions and the loudness of 
 * Considerable difficulty in transporting and assembling the installation
 * Performance issues related to serial connections to Arduino
 
+</details>
+
+<details>
+<summary style="font-size: medium">Future Works</summary>
+
 ### Future Works
 
 This project was conducted over the limited time frame of a month along with various other deadlines. As a result, many corners were cut and future work should start with a rework of already existing building blocks such as:
@@ -168,6 +220,8 @@ This project was conducted over the limited time frame of a month along with var
 - [ ] Making serial connection more robust
 
 On top of that, interactions should be overhauled. FFT-based peak decomposition with narrow frequency bins could be very interesting to isolate the highest amplitude frequencies and demonstrate how these can cause Faraday waves. 
+
+</details>
 
 ### License
 
