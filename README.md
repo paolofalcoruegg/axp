@@ -76,7 +76,7 @@ The concept for *Arena* evolved from exploring the beautiful Faraday wave effect
 Both modules used vodka as the liquid, as it was found to produce the most interesting patterns. The two concept sketches shown below outlined two potential layouts for the installation.
 
 <p align="center"><img width="700" src=".github/ConceptOne.jpg"><img width="700" src=".github/ConceptTwo.jpg"></p>
-<p align="center"><em>Figure 4: Concept sketches</em></p>
+<p align="center"><em>Figure 4: Concept Sketches</em></p>
 
 My individual responsibilities were focused on *Module 1* and were delivered as three distinct work packages. The following sections are focused on my *individual contributions* to this project unless otherwise noted. All the code used during the installation is available [here](https://github.com/pa17/axp/tree/master/code).
 
@@ -96,7 +96,7 @@ Time planning for this project was rudimentary. The team's strategy was to sourc
 A clear system design was required to ensure the build would go smoothly. A full component decomposition is shown below for both modules, although I primarily designed the first module (shown on the left).
 
 <p align="center"><img src=".github/SystemDiagram.svg"></p>
-<p align="center"><em>Figure 5: System diagram with component decomposition for both modules</em></p>
+<p align="center"><em>Figure 5: System Diagram with Component Decomposition for both Modules</em></p>
 
 A more detailed components breakdown is shown below for *Module 1*. Please note that all of these components are generic and can be replaced with any equivalent. As such, connectors such as cables are not specified here.
 
@@ -109,7 +109,7 @@ A more detailed components breakdown is shown below for *Module 1*. Please note 
 The components were connected using a plethora of 3.5mm, 6.35mm and speaker cables. Data and power lines either ran through USB-A or jumper wires. The bulky electronic components were assembled on a piece of plywood and separated from the speaker, as shown in *Figure 6*. For the purposes of the installation, the electronics box was hidden away underneath a table upon which the module was placed.
 
 <p align="center"><img width="700" src=".github/IntegrationProcess.jpg"></p>
-<p align="center"><em>Figure 6: Hardware integration</em></p>
+<p align="center"><em>Figure 6: Hardware Integration</em></p>
 
 </details>
 
@@ -124,9 +124,9 @@ The patch shown below was introduced as a bpatcher object in the top-level Max p
 
 <p align="center"><img width="700" src=".github/LEDControl.jpeg"></p>
 <p align="center"><img width="450" src=".github/SerialHandler.jpg"></p>
-<p align="center"><em>Figure 7: LED Control and serialisation patch</em></p>
+<p align="center"><em>Figure 7: LED Control and Serialisation Patch</em></p>
 
-On the receiving end, the microcontroller interpreted the bytes as RGB values and controlled the LED strip through Adafruit's Neopixel library. The loop function is shown below. 
+On the receiving end, the microcontroller interpreted the bytes as RGB values and controlled the LED strip through Adafruit's *Neopixel* library. The loop function is shown below. 
 
 ```
 void loop() 
@@ -153,10 +153,10 @@ void loop()
 }
 ```
 
-In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 10A power supply. Information about specific components can be found in the *WP1: Integration* section. The LED ring was run along the outer edge of the plate (*Figure 8*).
+In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 10A power supply. Information about specific components can be found in the *WP1: Integration* section. The LED ring was run along the outer edge of the plate, as shown below.
 
 <p align="center"><img width="700" src=".github/LEDProcess.jpg"></p>
-<p align="center"><em>Figure 8: LED ring assembly</em></p>
+<p align="center"><em>Figure 8: LED Ring Assembly</em></p>
 
 </details>
 
@@ -168,12 +168,12 @@ In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 
 The normalised input audio was passed into a crossfader object (M4L.cross1~), along with the waveshaped signal on the second input. Potentiometers actuated by the user informed output volume and the mixing between the raw and modified signal. User input and effect processing were not my responsibilities and are therefore not discussed further here. Instead, I worked on I/O, implemented the crossfading and matched hardware and software channels. The full software diagram for *Module 1* is shown here for completeness.
 
 <p align="center"><img width="700" src=".github/SoftwareDiagram.png"></p>
-<p align="center"><em>Figure 9: Functional flowchart of Max patch</em></p>
+<p align="center"><em>Figure 9: Functional Flowchart of the Max Patch</em></p>
 
 A problem that quickly became apparent was that the loudness of the subwoofer was excessive considering two modules were playing at the same time. During the installation, the signal to the subwoofer was therefore filtered using a biquad~ object, at a cutoff frequency of 120 Hz. The filtered sub and the unfiltered headphone mono signals were sent to individual DAC outputs on the audio interface.
 
 <p align="center"><img width="700" src=".github/Fader.jpeg"></p>
-<p align="center"><em>Figure 10: Crossfader and filtering patch</em></p>
+<p align="center"><em>Figure 10: Crossfader and Filtering Patch</em></p>
 
 </details>
 
@@ -186,7 +186,7 @@ A wooden top piece with an organic curvature was manufactured to overlay the sub
 
 <p align="center"><img width="700" src=".github/BuildProcessOne.jpg"></p>
 <p align="center"><img width="700" src=".github/BuildProcessTwo.gif"></p>
-<p align="center"><em>Figure 10: Manufacturing and painting the top pieces</em></p>
+<p align="center"><em>Figure 11: Manufacturing and Painting the Top Pieces</em></p>
 
 </details>
 
@@ -195,17 +195,17 @@ A wooden top piece with an organic curvature was manufactured to overlay the sub
 
 ### Review & Future Improvements
 
-The installation was a success with the biggest response being amazement at the complexity of patterns produced. It was noted how a relatively simple apparatus could create complex nonlinear behaviours. Moreover, people appeared to like the fact that they could play their own music, somewhat giving them a new experience of music they already have an emotional attachment to. Other successes included:
+The installation was a success with the biggest response being amazement at the complexity of patterns produced. It was noted how a relatively simple apparatus could create complex nonlinear behaviours. Moreover, people appeared to like the fact that they could play their own music, giving them a new experience of music they already have an emotional attachment to. Other successes included:
 
 - [x] Tightness of seal through use of acetyl welding
 - [x] Good results with different mobile phones through signal normalisation
 - [x] Visitors took their time to experience the installation and usually tried more than one song
 
-Limitations included the meaningfulness of the interactions and the loudness of the installation. The former suffered from the fact that the team struggled to 'decompose' a music track into fewer yet consonant signals. The loudness of the installation was another drawback, especially as the sound seeped through to the other module, sometimes causing Faraday waves on it when only one was playing. Other limitations included:
+Limitations included the meaningfulness of the interactions and the loudness of the installation. The former suffered from the fact that the team struggled to 'decompose' a music track into fewer yet consonant signals. The loudness of the installation was another drawback, especially as the sound seeped through to the other module, sometimes causing Faraday waves on the other module when only one was playing. Other limitations included:
 
 * Average build quality due to time constraints
 * Considerable difficulty in transporting and reassembling the installation
-* Performance issues related to serial connections to Arduino
+* Performance issues related to the serial connection to Arduino
 * Liquid evaporated over time and needed to be refilled repeatedly
 
 This project was conducted over the limited time frame of a month along with various other deadlines. As a result, many corners were cut and future work should start with a rework of already existing building blocks such as:
@@ -214,7 +214,9 @@ This project was conducted over the limited time frame of a month along with var
 - [ ] Using plugs rather than soldered connections
 - [ ] Making serial connection more robust
 
-On top of that, interactions should be overhauled. FFT-based peak decomposition with narrow frequency bins could be very interesting to isolate the highest amplitude frequencies and demonstrate how these can cause Faraday waves. Personally, I would be interested in miniaturising the installation into a smaller yet fully sealed container.
+On top of that, interactions should be overhauled. FFT-based peak decomposition with narrow frequency bins could be used to isolate the highest amplitude frequencies. Having found the fundamental frequencies of a music piece at a given time could then be used to demonstrate how even complex pieces can be reduced to simple sinusoids.
+
+Personally, I would also be interested in miniaturising the installation into a smaller yet fully sealed container. There is definitely also scope for other interactions such as building a sequencer that the visitor can control.
 
 </details>
 
