@@ -20,7 +20,7 @@
 </sup></sup>
 </p>
 
-**Arena** is an interactive cymatics installation that lets visitors discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the visitor to play  their music on the apparatus. The generated patterns, known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. A short video of Arena in action can be found [here](https://www.youtube.com/watch?v=euiSUtc0pYA).
+**Arena** is an interactive cymatics installation about the vibration patterns formed in liquids when exposed to sound waves. It consists of two modules, one of which explores the effects of pure tones, and one that allows the visitor to play  their music through the apparatus. The generated patterns, known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. A short video of Arena can be found [here](https://www.youtube.com/watch?v=euiSUtc0pYA).
 
 <br>
 
@@ -38,7 +38,7 @@
 
 ### Background & Inspiration
 
-A Chladni plate visualises the standing waves generated at its natural resonating frequencies. The original experiment consists of fine particles (e.g. sand) that are dispersed on a steel plate. When it is excited with a bow or a loudspeaker,  the plate starts to resonate and the sand bounces from the oscillating antinodes to the stationary nodes. In mathematic terms, the nodes are the zero points of the plate's 2D wave equation at the excitation frequency. As the sand coalesces around these nodal lines of the standing wave, so-called Chladni figures become visible. They are shown below for a guitar backplate at its different resonating frequencies.
+A Chladni plate visualises the standing waves that form when it resonates at its natural frequencies. The original experiment consisted of fine particles (e.g. sand) that are dispersed on a steel plate. When the plate is excited with a bow or a loudspeaker,  it starts to resonate and the sand bounces from the oscillating antinodes to the stationary nodes. In mathematic terms, the nodes are the zero points of the plate's 2D wave equation at the excitation frequency. As the sand coalesces around these nodal lines of the standing wave, so-called Chladni figures become visible. They are shown below for a guitar backplate at its different resonating frequencies.
 
 <p align="center"><img width="700" src=".github/Chladni.svg"></p>
 <p align="center"><em>Figure 1: Chladni Figures on a Guitar Body. <a href="https://commons.wikimedia.org/wiki/File:Chladni_guitar.svg">Source</a></em></p>
@@ -46,7 +46,7 @@ A Chladni plate visualises the standing waves generated at its natural resonatin
 This effect can be extended to liquids that are placed on a vertically oscillating diaphragm. As a result, beautiful standing wave patterns emerge on the liquid as shown in the figure below. These patterns are known as Faraday waves. The morphology of the patterns is dependent on frequency and container geometries. Amplitude, on the other hand, does not change the form of standing wave. The project team decided to create an installation around these vibrational patterns generated in liquids. 
 
 <p align="center"><img width="700" src=".github/FaradayWaves.jpg"></p>
-<p align="center"><em>Figure 2: Faraday waves. <a href="http://waterjournal.org/volume-9/sheldrake">Source</a></em></p>
+<p align="center"><em>Figure 2: Faraday Waves. <a href="http://waterjournal.org/volume-9/sheldrake">Source</a></em></p>
 
 </details>
 
@@ -55,10 +55,10 @@ This effect can be extended to liquids that are placed on a vertically oscillati
 
 ### Research
 
-This initial phase aimed at testing different substrates and to quickly progress to a concept. The team tested ferrofluids, iron filings, vodka and various other substances on a bass reflex speaker (Figure 3). We also looked at previous installations, which were mostly focused on pure tones. The team showed interest in showcasing how different types of signals (simple, complex, static or dynamic) visualise on the apparatus.
+This initial phase aimed at testing how different substrates respond to sound waves in order to quickly progress to a concept. The team tested ferrofluids, iron filings, vodka and various other substances on a bass reflex speaker (*Figure 3*). We also looked at previous installations, which were mostly focused on pure tones. The team showed interest in showcasing how different types of signals (simple, complex, static or dynamic) visualise on the apparatus.
 
 <p align="center"><img width="350" src=".github/Research.gif"></p>
-<p align="center"><em>Figure 3: Faraday waves on a simple woofer</em></p>
+<p align="center"><em>Figure 3: Faraday Waves on a Bass Reflex Woofer</em></p>
 
 </details>
 
@@ -67,18 +67,13 @@ This initial phase aimed at testing different substrates and to quickly progress
 
 ### Aims & Work Packages
 
-<!--
-<details>
-<summary style="font-size: medium">Aims & Work Packages</summary><br>
--->
-
-The concept for *Arena* evolved from exploring the beautiful Faraday wave effect on a small woofer. The aim of the installation was to showcase the field of cymatics both bottom-up and top-down, i.e. with a pure tone and complex signal (music) approach. The team managed to source two 12'' drivers and, in line with this, aimed to build two modules with distinct aims:
+The concept for *Arena* evolved from exploring the beautiful Faraday wave effect on a small woofer. The aim of the installation was to highlight cymatics using both a bottom-up and top-down approach, i.e. from a pure tone and complex signal (music) perspective. The team managed to source two 12'' drivers and, in line with this, aimed to build two modules with distinct aims:
 
 * **Module 1** lets the visitor investigate the patterns generated by complex music signals. The visitor can input their own music through an AUX cable and control sound effects with rotary knobs. 
 
 * **Module 2** lets the user investigate the patterns generated by sinusoids of varying frequency. The visitor can sweep through frequencies with a rotary knob.
 
-Both modules would use Vodka as the liquid, as it was found to produce the most interesting patterns. The two concept sketches shown below outlined two potential layouts for the installation.
+Both modules used vodka as the liquid, as it was found to produce the most interesting patterns. The two concept sketches shown below outlined two potential layouts for the installation.
 
 <p align="center"><img width="700" src=".github/ConceptOne.jpg"><img width="700" src=".github/ConceptTwo.jpg"></p>
 <p align="center"><em>Figure 4: Concept sketches</em></p>
