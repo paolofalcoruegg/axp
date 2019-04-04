@@ -22,10 +22,10 @@
 
 **Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the spectator to see their own music visualised. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
 
-<p align="center"><img width="700" src=".github/GalleryInteraction.jpg" alt="cover"></p>
-<p align="center"><img width="700" src=".github/GalleryBeat.gif" alt="cover"></p>
-<p align="center"><img width="700" src=".github/GalleryBubbles.jpg" alt="cover"></p>
-<p align="center"><img width="700" src=".github/GalleryLED.jpg" alt="cover"></p>
+<p align="center"><img src=".github/GalleryInteraction.jpg" alt="cover"></p>
+<p align="center"><img src=".github/GalleryBeat.gif" alt="cover"></p>
+<p align="center"><img src=".github/GalleryBubbles.jpg" alt="cover"></p>
+<p align="center"><img src=".github/GalleryLED.jpg" alt="cover"></p>
 
 ### Background & Inspiration
 
