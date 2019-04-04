@@ -9,7 +9,7 @@
   <a href="https://github.com/pa17">Paolo Rüegg, </a> 
   <a href="https://github.com/leahpattison">Leah Pattison, </a>
   <a href="https://github.com/ElliePeatman">Ellie Peatman, </a>
-  <a>Oliver Hoare, </a>
+  <a href="https://github.com/omjh">Oliver Hoare, </a>  
   <a href="https://github.com/josephine-latreille">Josephine Latreille</a>
 </sup>
 </p>
@@ -20,7 +20,7 @@
 </sup></sup>
 </p>
 
-**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the visitor to play  their music on the apparatus. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
+**Arena** is an interactive cymatics installation that lets visitors discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the visitor to play  their music on the apparatus. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
 
 <br>
 
@@ -36,12 +36,12 @@
 
 ### Background & Inspiration
 
-A Chladni plate visualises the standing wave patterns generated at its natural resonating frequencies. The original experiment consists of fine particles such as sand that is dispersed on a steel plate. When it is excited with a bow or a loudspeaker,  the plate starts to resonate and the sand bounces from the vibrating antinodes to the stationary nodes. In mathematic terms, the nodes are the solutions (zero points) of the plate's 2D wave equation at the excitation frequency. The sand coalesces around the nodal lines of the standing wave. As a consequence, so-called Chladni figures become visible, as shown below for a guitar body at its different resonating frequencies.
+A Chladni plate visualises the standing wave patterns generated at its natural resonating frequencies. The original experiment consists of fine particles (e.g. sand) that are dispersed on a steel plate. When it is excited with a bow or a loudspeaker,  the plate starts to resonate and the sand bounces from the vibrating antinodes to the stationary nodes. In mathematic terms, the nodes are the zero points of the plate's 2D wave equation at the excitation frequency. As the sand coalesces around these nodal lines of the standing wave, so-called Chladni figures become visible. They are shown below for a guitar body at different resonating frequencies.
 
 <p align="center"><img width="700" src=".github/Chladni.svg"></p>
 <p align="center"><em>Figure 1: Chladni Figures on a guitar body. <a href="https://commons.wikimedia.org/wiki/File:Chladni_guitar.svg">Source</a></em></p>
 
-This effect can be extended to liquids that are placed on a vertically oscillating diaphragm. It results in beautiful patterns as shown in the image below. Specifically, patterns created on a vertically oscillating fluid are known as Faraday waves. The morphology of the patterns is highly dependent on frequency and container geometries. Amplitude, on the other hand, does not change the form of standing wave. The project team decided to create an installation around these vibrational patterns generated in liquids. 
+This effect can be extended to liquids that are placed on a vertically oscillating diaphragm. Beautiful patterns emerge as a result of this and are shown in the image below. These patterns are known as Faraday waves. The morphology of the patterns is dependent on frequency and container geometries. Amplitude, on the other hand, does not change the form of standing wave. The project team decided to create an installation around these vibrational patterns generated in liquids. 
 
 <p align="center"><img width="700" src=".github/FaradayWaves.jpg"></p>
 <p align="center"><em>Figure 2: Faraday waves. <a href="http://waterjournal.org/volume-9/sheldrake">Source</a></em></p>
@@ -53,7 +53,7 @@ This effect can be extended to liquids that are placed on a vertically oscillati
 
 ### Research
 
-This initial phase aimed at testing various interesting audio phenomena and quickly progressing to a concept. The team tested ferrofluids, iron filings, vodka and various other substances on a bass reflex speaker, as shown below. We also looked at previous installations, which were mostly focused on pure tones. 
+This initial phase aimed at testing various interesting audio phenomena and quickly progressing to a concept. The team tested ferrofluids, iron filings, vodka and various other substances on a bass reflex speaker (Figure 3). We also looked at previous installations, which were mostly focused on pure tones. The team showed interest in showcasing how different types of signals (simple, complex, static or dynamic) visualise on the apparatus.
 
 <p align="center"><img width="350" src=".github/Research.gif"></p>
 <p align="center"><em>Figure 3: Faraday waves on a simple woofer</em></p>
@@ -70,22 +70,22 @@ This initial phase aimed at testing various interesting audio phenomena and quic
 <summary style="font-size: medium">Aims & Work Packages</summary><br>
 -->
 
-The concept for Arena evolved from the beautiful effect sound waves can have on liquids. The aim of this installation was to showcase the field of cymatics both bottom-up and top-down, i.e. with a pure tone and complex signal (music) approach. The team managed to source two 12'' drivers and, in line with this, aimed to build two modules.
+The concept for Arena evolved from exploring the beautiful Faraday wave effect on a small woofer. The aim of the installation was to showcase the field of cymatics both bottom-up and top-down, i.e. with a pure tone and complex signal (music) approach. The team managed to source two 12'' drivers and, in line with this, aimed to build two modules.
 
 <p align="center"><img width="700" src=".github/ConceptOne.jpg"><img width="700" src=".github/ConceptTwo.jpg"></p>
 <p align="center"><em>Figure 4: Concept sketches</em></p>
 
 Two concept sketches shown above outlined two potential layouts for the two modules. These would be distinct from one another, and the aim for each was set as the following:
 
-**Module 1** lets the visitor investigate the patterns generated by complex music signals. The visitor can input their own music through AUX and control sound effects with rotary knobs. 
+**Module 1** lets the visitor investigate the patterns generated by complex music signals. The visitor can input their own music through an AUX cable and control sound effects with rotary knobs. 
 
 **Module 2** lets the user investigate the patterns generated by sinusoids of varying frequency. The visitor can sweep through frequencies with a rotary knob.
 
-My personal responsibilities were focused on  ***Module 1*** and can be summarised in three distinct work packages as follows. The following sections are focused on my individual contributions to this project unless otherwise noted.
+My personal responsibilities were focused on  ***Module 1*** and can be summarised in three distinct work packages. The following sections are focused on my *individual contributions* to this project unless otherwise noted.
 
-1. System Design & Integration: Designing the full system, sourcing the required audio components and connecting hardware to software
-2. Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
-3. Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
+WP1: System Design & Integration: Designing the full system, sourcing the required audio components and connecting hardware to software
+WP2: Sound Visualisation (Light): Developing and assembling an LED array that changes in color and brightness in response to varying amplitudes in defined frequency bins
+WP3: Sound Processing: Creating a Max MSP patch that processes music input through an AUX cable, crossfades between raw and waveshaped signals, and delivers an output signal to the driver (filtered) and headphones (raw)
 
 There was no solid framework with regards to time planning. The general strategy was to source all components early on (W7 - W8), get individual tasks done in the following two weeks (W8 - W9), and to work together to integrate the subsystems in W10. 
 
@@ -96,12 +96,12 @@ There was no solid framework with regards to time planning. The general strategy
 
 ### WP1: System Design & Hardware Integration
 
-A clear system design was required to ensure the build would go smoothly. A component decomposition is shown below for both modules, where I was primarily involved with designing the first module (left).
+A clear system design was required to ensure the build would go smoothly. A full component decomposition is shown below for both modules, although I primarily designed the first module (left).
 
 <p align="center"><img src=".github/SystemDiagram.svg"></p>
 <p align="center"><em>Figure 5: Component decomposition for both modules</em></p>
 
-A more detailed components breakdown is shown below for ***Module 1***. All unspecified components are standard audio and electronic components such as cables:
+A more detailed components breakdown is shown below for ***Module 1***. *Note:* All of these components are generic and can be replaced with any equivalent. As such, connectors such as cables are not specified here.
 
 * 1x LEPY LP-202A Hi-Fi Stereo Power Amplifier (2 Channels, 20W RMS)
 * 1x Focusrite Scarlett 2i2 Audio Interface (2 Channels)
@@ -109,12 +109,10 @@ A more detailed components breakdown is shown below for ***Module 1***. All unsp
 * 1x Arduino Uno R3
 * 2x 12'' Radioshack speaker
 
-The components were connected using a plethora of 3.5mm, 6.35mm and speaker cables. Data and power lines either ran through USB-A or jumper wires. The bulky electronic components were assembled on a piece of plywood and separated from the speaker, as shown in Figure XXX.
+The components were connected using a plethora of 3.5mm, 6.35mm and speaker cables. Data and power lines either ran through USB-A or jumper wires. The bulky electronic components were assembled on a piece of plywood and separated from the speaker, as shown in Figure 6. For the purposes of the installation, the electronics box was hidden away underneath a table upon which the module was placed.
 
 <p align="center"><img width="700" src=".github/IntegrationProcess.jpg"></p>
 <p align="center"><em>Figure 6: Hardware integration</em></p>
-
-For the purposes of the installation, the electronics box was hidden away underneath a table upon which the module was placed.
 
 </details>
 
@@ -123,7 +121,9 @@ For the purposes of the installation, the electronics box was hidden away undern
 
 ### WP2: Sound Visualisation
 
-This work package involved developing a color-changing equaliser with three frequency bins, where red, green & blue represented bass, midrange & highs. As such, a one-way data stream from Max MSP to a microcontroller was required, where music-dependent RGB values were serially transferred. On the Max side, the full signal was passed into two crossover objects (cross~), scaled and then sent to the microcontroller. The cut-off frequencies for the three frequency bands were chosen at 1000Hz and 3000Hz for bass-mid and mid-high, respectively. The patch shown below was introduced as a bpatcher object in the top-level Max patch, retaining toggling functionality to manually control RGB levels for debugging. The following figure shows how this was implemented in code. Special thanks to @cskonopka and his [Arduivis project](https://github.com/cskonopka/arduivishttps://github.com/cskonopka/arduivis), some of the code of which was used for serialisation.
+This work package involved developing a color-changing equaliser with three frequency bins, where red, green & blue represented bass, midrange & highs. As such, a one-way data stream from Max MSP to a microcontroller was required, where music-dependent RGB values were serially transferred. On the Max side, the full signal was passed into two crossover objects (cross~), scaled and then sent to the microcontroller. The cut-off frequencies for the three frequency bands were chosen at 1000Hz and 3000Hz for bass-mid and mid-high, respectively. 
+
+The patch shown below was introduced as a bpatcher object in the top-level Max patch, retaining toggling functionality to manually control RGB levels for debugging. Special thanks to @cskonopka and his [Arduivis project](https://github.com/cskonopka/arduivishttps://github.com/cskonopka/arduivis), some of the code of which was used to implement serialisation.
 
 <p align="center"><img width="700" src=".github/LEDControl.jpeg"></p>
 <p align="center"><img width="450" src=".github/SerialHandler.jpg"></p>
@@ -156,7 +156,7 @@ void loop()
 }
 ```
 
-In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 10A power supply. Information about specific components can be found in the ***WP1: Integration*** section. The LED ring was run along the outer edge of the plate as shown in Figure XXX.
+In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 10A power supply. Information about specific components can be found in the ***WP1: Integration*** section. The LED ring was run along the outer edge of the plate (Figure 8).
 
 <p align="center"><img width="700" src=".github/LEDProcess.jpg"></p>
 <p align="center"><em>Figure 8: LED ring assembly</em></p>
@@ -168,7 +168,12 @@ In terms of hardware, a standard RGB LED strip was used and powered with a 5V / 
 
 ### WP3: Sound Processing
 
-The normalised input audio was passed into a crossfader object (M4L.cross1~), along with the waveshaped signal on the second input. Potentiometers actuated by the user informed output volume and the mixing between the raw and modified signal. One porblem that quickly became apparent was that the loudness of the subwoofer was excessive considering two modules were playing at the same time. During the installation, the signal to the subwoofer was therefore filtered using a biquad~ object, at a cutoff frequency of 120 Hz. The filtered sub and the unfiltered headphone mono signals were sent to individual DAC outputs on the audio interface.
+The normalised input audio was passed into a crossfader object (M4L.cross1~), along with the waveshaped signal on the second input. Potentiometers actuated by the user informed output volume and the mixing between the raw and modified signal. User input and effect processing were not my responsibilities and are therefore not discussed further here. Instead, I worked on I/O, implemented the crossfading and matched hardware and software channels. The full software diagram for Module 1 is shown here for completeness.
+
+<p align="center"><img width="700" src=".github/SoftwareDiagram.png"></p>
+<p align="center"><em>Figure 9: Crossfader and filtering patch</em></p>
+
+A problem that quickly became apparent was that the loudness of the subwoofer was excessive considering two modules were playing at the same time. During the installation, the signal to the subwoofer was therefore filtered using a biquad~ object, at a cutoff frequency of 120 Hz. The filtered sub and the unfiltered headphone mono signals were sent to individual DAC outputs on the audio interface.
 
 <p align="center"><img width="700" src=".github/Fader.jpeg"></p>
 <p align="center"><em>Figure 9: Crossfader and filtering patch</em></p>
@@ -180,12 +185,11 @@ The normalised input audio was passed into a crossfader object (M4L.cross1~), al
 
 ### Build
 
-A wooden top piece with an organic curvature was manufactured to overlay the subwoofer. The knobs were attached along with a wooden frame to hold the structure. The frame could subsequently be placed over the subwoofer, with the electronics tucked away underneath the presentation table.
+A wooden top piece with an organic curvature was manufactured to overlay the subwoofer. The knobs were attached along with a wooden frame to hold the structure. The frame could subsequently be placed over the subwoofer, with the electronics tucked away underneath the presentation table. The final piece is shown in the gallery on top for presentation reasons. 
 
-<p align="center"><img width="700" src=".github/BuildProcess.gif"></p>
-<p align="center"><em>Figure 10: Ollie is painting the top pieces</em></p>
-
-The final piece is shown in the gallery on top for presentation reasons. 
+<p align="center"><img width="700" src=".github/BuildProcessOne.jpg"></p>
+<p align="center"><img width="700" src=".github/BuildProcessTwo.gif"></p>
+<p align="center"><em>Figure 10: Manufacturing and painting the top pieces</em></p>
 
 </details>
 
