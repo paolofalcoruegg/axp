@@ -6,7 +6,10 @@
 
 <p  align="center">
 <sup>
-  <a href="https://github.com/pa17">Paolo Rüegg</a> 
+  <a href="https://github.com/pa17">Paolo Rüegg, </a> 
+  <a href="https://github.com/leahpattison">Leah Pattison, </a>
+  <a>Ellie Peatman, </a> 
+  <a>Oliver Hoare</a>
 </sup>
 </p>
 
@@ -16,7 +19,7 @@
 </sup></sup>
 </p>
 
-**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the spectator to see their own music. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
+**Arena** is an interactive cymatics installation that lets people discover how sound waves excite vibration patterns in liquids. It consists of two modules, one of which explores the effects of pure tones, and one that allows the spectator to see their own music visualised. The generated patterns, also known as Faraday waves, are a visualisation of the wealth of information contained in audio signals and are mesmerising and surprising alike. The installation was exhibited at the Dyson School of Design Engineering at Imperial College London on the 18th and 22nd of March 2019. 
 
 ### Background & Inspiration
 
